@@ -4,7 +4,7 @@ import socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Asociar a una IP y puerto
-server_socket.bind(("127.0.0.1", 5000))  # localhost:5000
+server_socket.bind(("192.168.1.75", 5000))  # localhost:5000
 server_socket.listen(1)  # Máximo 1 cliente en espera
 
 print("Servidor esperando conexiones...")

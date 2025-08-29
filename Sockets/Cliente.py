@@ -4,7 +4,7 @@ import socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Conectarse al servidor
-client_socket.connect(("127.0.0.1", 5000))
+client_socket.connect(("192.168.1.75", 5000))
 
 print("Conectado al servidor.")
 
@@ -16,5 +16,3 @@ while True:
     print("Servidor responde:", data)
 
 client_socket.close()
-
-
